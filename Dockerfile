@@ -5,4 +5,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 COPY . .
 
-CMD ./bypss
+RUN ./Ultroid
+WORKDIR root/TeamUltroid
+
+CMD ./START
